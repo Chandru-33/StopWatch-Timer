@@ -1,0 +1,75 @@
+body{
+    background: linear-gradient(45deg, orange, purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: gainsboro;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 30px;
+}
+.stopwatch{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.timer{
+    background-color: white;
+    font-size: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+    animation: pulse 1.5s infinite alternate;
+}
+@keyframes pulse {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+    
+}
+.timer span{
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+.controller{
+    display: flex;
+    gap: 10px;
+}
+button{
+    padding: 5px 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: lightpink;
+    border:none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+button:hover{
+    background-color: palevioletred;
+}
+.laps{
+    font-size: larger;
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    border-radius: 7px;
+    background-color: white;
+}
